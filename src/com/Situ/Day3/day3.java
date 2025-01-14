@@ -62,14 +62,4 @@ public class day3 {
             }
         }
     }
-    @Test
-    public void test5(){
-        student student=null;
-        System.out.println(student);
-        System.out.println(student);
-    }
-    @Test
-    public void test6(){
-
-    }
 }
