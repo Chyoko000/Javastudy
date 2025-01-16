@@ -2,10 +2,7 @@ package com.Situ.Day6;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class day6 {
     @Test
@@ -102,4 +99,8 @@ public class day6 {
             System.out.println(str);
         }
     }
+
+
+
+
 }
