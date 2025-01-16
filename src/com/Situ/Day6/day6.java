@@ -33,7 +33,7 @@ public class day6 {
     public void test3(){
         String str1="java";
         String str2="Java";
-        System.out.println(str1.equals(str2));//equals对比的是内容是否一样
+        System.out.println(str1.equals(str2));//equals对比的是内容是否一样2
 
     }
 }
