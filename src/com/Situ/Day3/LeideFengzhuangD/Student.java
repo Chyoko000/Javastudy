@@ -15,8 +15,8 @@ public class Student {
         }
         return;//抛出异常
     }
-
-    public int getAge(){//返回的值为int类型
+    //方法签名         //括号里是参数
+    public int getAge(){//返回的值为int类型//方法体
         return this.age;
     }
 //同理也可以用快速生成
