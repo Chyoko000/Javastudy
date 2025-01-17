@@ -1,4 +1,4 @@
-package com.Situ.ShiYan;
+package com.Situ.Day3.LeideFengzhuangD;
 //此为类的内部
 public class Student {
     public String name;
@@ -6,7 +6,7 @@ public class Student {
     private  int age;
 
 
-
+//get和set
     //此时为了获取id可以通过get和set的方法间接获取信息
     public  void setAge (int age){//方法的参数必须指定类型  void不会返回值只是会进行操作
         //id=id;//错误的因为就近原则导致；两就会形成自己给自己赋值的现象
@@ -19,7 +19,7 @@ public class Student {
     public int getAge(){//返回的值为int类型
         return this.age;
     }
-
+//同理也可以用快速生成
 
 
 
