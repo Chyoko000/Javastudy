@@ -1,7 +1,8 @@
 package com.Situ.Day4;
 
 import com.Situ.Day5.Person;
-
+//继承要用extends声明，extends是扩展的意思
+//继承之后也访问不到父类依旧要用get方法调用，此时就要改变父类里面的访问修饰符
 public class Student extends Person {
 //    private int id;
 //    private String name;

@@ -1,4 +1,4 @@
-package com.Situ.Day3;
+package com.Situ.Day3.day3;
 
 public class student {
     int id;

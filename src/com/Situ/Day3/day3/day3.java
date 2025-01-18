@@ -1,4 +1,4 @@
-package com.Situ.Day3;
+package com.Situ.Day3.day3;
 
 import org.junit.jupiter.api.Test;
 
