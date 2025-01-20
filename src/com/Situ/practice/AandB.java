@@ -13,6 +13,6 @@ public class AandB {
         int c= a +b;
         System.out.println(c);
         scanner.close();//防止资源泄露
-
+        //测试
     }
 }
