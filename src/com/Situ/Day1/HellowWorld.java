@@ -12,6 +12,8 @@ public class HellowWorld {
         int b=77;
         boolean c=(a>=7)&&(b<=80);
         System.out.println(c);
+        //||短路
+        System.out.println(a > 0 || a++ < b);
     }
 }
 
