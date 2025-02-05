@@ -104,13 +104,14 @@ public class IODemo {
         }
     }
 
+    //字节流
     @Test
     public void test45() {
         FileInputStream fileInputStream = null;
         FileOutputStream fileOutputStream = null;
         try {
-            fileInputStream = new FileInputStream("bd.png");
-            fileOutputStream = new FileOutputStream("bd_back.png");
+            fileInputStream = new FileInputStream("640.jpg");
+            fileOutputStream = new FileOutputStream("640.jpg");
             byte[] buffer = new byte[1024];
             int length = -1;
             while ((length = fileInputStream.read(buffer)) != -1) {
@@ -138,6 +139,9 @@ public class IODemo {
         }
     }
 
+
+
+    //
     @Test
     public void testObjectOutputStream() {
         Student student = new Student();
@@ -149,7 +153,7 @@ public class IODemo {
         ObjectOutputStream objectOutputStream = null;
         FileOutputStream fileOutputStream = null;
         try {
-            fileOutputStream = new FileOutputStream("stu");
+            fileOutputStream = new FileOutputStream("student");
             objectOutputStream = new ObjectOutputStream(fileOutputStream);
             objectOutputStream.writeObject(student);
         } catch (IOException e) {
@@ -177,7 +181,7 @@ public class IODemo {
         FileInputStream fileInputStream = null;
         ObjectInputStream objectInputStream = null;
         try {
-            fileInputStream = new FileInputStream("stu");
+            fileInputStream = new FileInputStream("student");
             objectInputStream = new ObjectInputStream(fileInputStream);
             Student student = (Student) objectInputStream.readObject();
             System.out.println(student);
