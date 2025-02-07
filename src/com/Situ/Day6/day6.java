@@ -5,16 +5,23 @@ import org.junit.jupiter.api.Test;
 import java.util.*;
 
 public class day6 {
+    //数值对比
     @Test
     public void test1(){
-
+//双等号是地址值的对比
         String str ="123";//相当于在常量池里面new一个123的字符串
         String str1 =new String("123");//在堆里面new一个123的字符串
         String str2 ="123";//优先使用常量池里面的地址值
-        System.out.println(str==str1);
-        System.out.println(str1==str2);
-        System.out.println(str2==str);
+        String str3=new String("123");//再次尝试在栈里面new一个新的字符串
+//        System.out.println(str==str1);
+//        System.out.println(str1==str2);
+//        System.out.println(str2==str);
+        System.out.println(str2==str1);//在栈里无论new多少个他都不一样
+        //equals是对比数值的
+        System.out.println(str1.equals(str2));
     }
+
+    //查找
     @Test
     public void test2() {
         String str = "java AndroidA";
