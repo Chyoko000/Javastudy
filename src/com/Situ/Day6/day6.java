@@ -142,17 +142,24 @@ public class day6 {
         //同理Boolean也行；
     }
 
-
+//Day7
     @Test
     public void testb(){
         Student[] array=new Student[3];
         //长度固定所以初始化要进行如上操作。
+        //只能存放Student类的数据
+        int[] arr=new int[3];
+        arr[1]=1;
+        //这种情况才可以输入int类
 
-        ArrayList<Student>list=new ArrayList<>();
+
+        //这是模板，下边是代码
+        ArrayList<Student>list=new ArrayList<>();//arrraylist插入和输出一样
         Student student1=new Student();
         Student student2=new Student();
         Student student3=new Student();
         Student student4=new Student();
+        array[1]=student1;//array这个只能放这个类
         list.add(student1);
         list.add(student2);
         list.add(student3);
@@ -161,11 +168,11 @@ public class day6 {
         //有序可重复
         //有序：你放进去的顺序和拿出来的顺序一致
         //ArrayList<String> list1 = new ArrayList<>();
-        List<String> list1 = new ArrayList<>();
+        List<String> list1 = new ArrayList<>();//两种写法都可以
         list1.add("Java");
         list1.add("UI");
         list1.add("H5");
-        list1.add("H5");
+        list1.add("H5");//相同的不会被吃掉
         list1.add("aa");
         for (String str : list1) {
             System.out.println(str);
@@ -175,7 +182,7 @@ public class day6 {
         //无序不重复
         //无序：放进去顺序和拿出来的顺序可能是不一致的
         //HashSet<String> set = new HashSet<String>();
-        Set<String> set = new HashSet<>();
+        Set<String> set = new HashSet<>();//同理
         set.add("Java");
         set.add("UI");
         set.add("H5");
@@ -186,6 +193,32 @@ public class day6 {
         }
     }
 
+//无序map
+    @Test
+    public void test45(){
+        HashMap<String, String> map = new HashMap<>();//无序
+        map.put("cn", "中国");
+        map.put("us", "美国");
+        map.put("uk", "英国");
+        Set<Map.Entry<String, String>> entrySet = map.entrySet();
+        //map.entrySet() 方法返回一个 包含 Map 所有键值对 (key-value) 的 Set 集合，
+        // 其中每个元素都是 Map.Entry<K, V> 类型的对象。
+        for (Map.Entry<String, String> entry : entrySet) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }//通过entry打印
+        System.out.println("----------------");
+        //通过key来打印
+        Set<String> keySet = map.keySet();
+        for (String key : keySet) {
+            System.out.println(key + " : " + map.get(key));
+        }
+        //笔记11那里讲的很清楚
+        System.out.println("------------");
+        String value = map.remove("uk");
+        //map里面k为uk的v
+        System.out.println(value);
+
+    }
 
 
 
