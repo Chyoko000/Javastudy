@@ -4,7 +4,7 @@ package com.Situ.Day5.inter;
 //既可以继承父类又可以实现接口
 public class DaYan extends AbstracBird implements  IFly{
 
-    @Override
+    @Override//确保子类正确重写了父类方法（方法签名必须匹配）
     public void fly() {
         System.out.println("DaYan.fly");//实现了一个接口具有了一个功能
     }
