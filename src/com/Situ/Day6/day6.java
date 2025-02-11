@@ -21,6 +21,7 @@ public class day6 {
         System.out.println(str1.equals(str2));
     }
 
+
     //查找
     @Test
     public void test2() {
